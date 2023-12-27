@@ -57,14 +57,14 @@ class Consumer(
             }
         }
 
-        connection.onClose = {
-            subscriptions.notifyDisconnected()
-            connectionMonitor.recordDisconnect()
-        }
-
-        connection.onFailure = { error ->
-            subscriptions.notifyFailed(error)
-        }
+//        connection.onClose = {
+//            subscriptions.notifyDisconnected()
+//            connectionMonitor.recordDisconnect()
+//        }
+//
+//        connection.onFailure = { error ->
+//            subscriptions.notifyFailed(error)
+//        }
     }
 
     /**
